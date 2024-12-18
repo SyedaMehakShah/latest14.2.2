@@ -1,0 +1,76 @@
+/* Basic styles for navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #121212;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #adb7be;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: white;
+  }
+  
+  .menuBtn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobileMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #121212;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .mobileMenu.show {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+  
+    .menuBtn {
+      display: block;
+    }
+  
+    .navbar {
+      padding: 1rem;
+    }
+  }
+  

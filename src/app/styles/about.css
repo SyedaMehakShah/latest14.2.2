@@ -1,0 +1,94 @@
+/* styles/about.css */
+
+/* About Section Styles */
+.aboutSection {
+  background-color: #121212; /* Dark background for contrast */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center; /* Center text */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: purple;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.title:hover {
+  color: palevioletred; /* Change color on hover */
+  transform: scale(1.1); /* Slight grow effect */
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #ccc;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hoverEffect:hover {
+  color: #1abc9c; /* Highlight text on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.skillsList li {
+  font-size: 1.5rem;
+  color: #eee;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skillsList li:hover {
+  color: #e74c3c; /* Change color */
+  transform: translateX(10px); /* Slide to the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .skillsList li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .skillsList li {
+    font-size: 1rem;
+  }
+}
